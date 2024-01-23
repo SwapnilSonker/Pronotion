@@ -1,11 +1,11 @@
 {
-  "id": "69b32d05-5647-4c72-993e-82cbefc4ae1c",
+  "id": "028e1e09-2143-4461-81c5-19d6221f88aa",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "5",
   "dialect": "pg",
   "tables": {
-    "workspace": {
-      "name": "workspace",
+    "workspaces": {
+      "name": "workspaces",
       "schema": "",
       "columns": {
         "id": {
