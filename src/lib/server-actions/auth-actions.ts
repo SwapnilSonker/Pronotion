@@ -1,4 +1,4 @@
-"use server"
+"use server";
 
 import { z } from "zod";
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
@@ -32,7 +32,7 @@ export async function actionSignupUser({
     password, 
     options: {
       emailRedirectTo:
-    `${process.env.NEXT_PUBLIC_URL}/api/auth/callback`
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/auth/callback`
     }
   });
   return response;
