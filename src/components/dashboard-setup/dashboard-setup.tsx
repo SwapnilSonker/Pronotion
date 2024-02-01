@@ -2,6 +2,7 @@
 import { AuthUser } from '@supabase/supabase-js'
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import { Subscription } from '@/lib/supabase/supabase.types';
 
 
 interface DashboardSetupProps{
@@ -9,6 +10,8 @@ interface DashboardSetupProps{
     subscription:{} | null;
 }
 const DashboardSetup: React.FC<DashboardSetupProps> = ({user , subscription}) => {
+  console.log("user" , user);
+  console.log("subs" , subscription);
   return (
     <Card className="w-[800px] h-screen sm:h-auto">
       <CardHeader>
