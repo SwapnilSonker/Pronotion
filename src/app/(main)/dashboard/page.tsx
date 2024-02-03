@@ -24,8 +24,8 @@ const DashboardPage = async() => {
 
 console.log("subscription");
 console.log("workspace 👽", !workspace);
-  // if(subscriptionError) return;
-
+  if(subscriptionError) return;
+console.log("entered in workspace");
   if (!workspace)
     return (
       <div
