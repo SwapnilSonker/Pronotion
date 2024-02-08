@@ -9,9 +9,7 @@ import { Database } from '@/lib/supabase/supabase.types';
 const DashboardPage = async() => {
 
   const supabase = createServerComponentClient<Database>({ cookies});
-  console.log("supabase" , supabase);
   const { data: {user}, } = await supabase.auth.getUser();
-  console.log("user" , user);
 
   if(!user) return;
   
@@ -22,10 +20,7 @@ const DashboardPage = async() => {
   const { data: subscription , error: subscriptionError } = await getUserSubscriptionStatus(user.id);
 
 
-console.log("subscription");
-console.log("workspace 👽", !workspace);
   if(subscriptionError) return;
-console.log("entered in workspace");
   if (!workspace)
     return (
       <div
